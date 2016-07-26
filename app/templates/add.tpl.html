@@ -1,0 +1,49 @@
+<div class="addContentsWrapper">
+    <form  ng-submit="vm.addContact(contact)">
+         {{ contact }}
+        <div>
+           <input type="text" 
+                  class="nameText" 
+                  placeholder="Contact Name" 
+                  ng-model="contact.name"
+                  required>
+        </div>
+
+        <div>
+          <input type="email"
+                 class="emailText"
+                 placeholder="Email (foo@bar.com)"
+                 ng-model="contact.email"
+                 required>
+        </div>
+
+        <div>
+           <input type="tel" 
+                  class="telText" 
+                  placeholder="Phone #" 
+                  ng-model="contact.phone"
+                  required>
+        </div>
+
+        <div>
+           <input type="text" 
+                  class="addressText" 
+                  placeholder="Address" 
+                  ng-model="contact.address"
+                  required>
+        </div>
+
+        <div>
+           <input type="text" 
+                  class="photoBox" 
+                  placeholder="Add Photo" 
+                  ng-model="contact.pic"
+                  required>
+        </div>
+
+          <div class="buttonBox"> 
+              <button class="button">Add Contact</button>
+          </div>
+
+    </form>
+</div>
