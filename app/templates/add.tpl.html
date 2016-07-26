@@ -1,15 +1,18 @@
 <div class="addContentsWrapper">
     <form  ng-submit="vm.addContact(contact)">
          {{ contact }}
-        <div>
+
+        <div class="inputBox">
+        <i class="fa fa-user" aria-hidden="true"></i>
            <input type="text" 
-                  class="nameText" 
+                  class="nameText"
                   placeholder="Contact Name" 
                   ng-model="contact.name"
                   required>
         </div>
 
-        <div>
+        <div class="inputBox">
+        <i class="fa fa-envelope" aria-hidden="true"></i>
           <input type="email"
                  class="emailText"
                  placeholder="Email (foo@bar.com)"
@@ -17,7 +20,8 @@
                  required>
         </div>
 
-        <div>
+        <div class="inputBox">
+      <i class="fa fa-phone-square" aria-hidden="true"></i>
            <input type="tel" 
                   class="telText" 
                   placeholder="Phone #" 
@@ -25,7 +29,8 @@
                   required>
         </div>
 
-        <div>
+        <div class="inputBox">
+        <i class="fa fa-globe" aria-hidden="true"></i>
            <input type="text" 
                   class="addressText" 
                   placeholder="Address" 
@@ -33,7 +38,8 @@
                   required>
         </div>
 
-        <div>
+        <div class="inputBox">
+        <i class="fa fa-camera-retro" aria-hidden="true"></i>
            <input type="text" 
                   class="photoBox" 
                   placeholder="Add Photo" 

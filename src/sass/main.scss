@@ -1,3 +1,9 @@
+$red: #E3311D;
+
+html {
+  font-size: 62.5%;
+}
+
 .MainBox {
 	border: solid black 1px;
 	display: flex;
@@ -6,5 +12,78 @@
 	justify-content: center;
 	margin: 25px auto;
 	width: 80vh;
-
 }
+
+.navWrapper {
+	font-size: 2em;
+	color: grey;
+}
+
+a {
+	text-decoration: none;
+	color: $red;
+}
+
+input {
+	border: none;
+	outline: none;
+	margin-left: 5px;
+}
+.inputBox {
+   display: flex;
+   height: 5vh;
+   width: 50vw;
+   margin: 1vh;
+   border: outset 1px #F2F2F5;
+   padding: 1px;
+   border-radius: 5px;
+   box-shadow: 0px 1px 10px 2px rgba(156, 156, 156, 0.07);
+   background-color: #FFFFFF;
+   outline: none;
+   color: #000000;
+   font-size: 1.4em;
+   align-items: center;
+  }
+.inputBox:hover  {
+   border: 2px outset #949494;
+  }
+.inputBox:focus  {
+   border: solid 2px #8F1340;
+   box-shadow: inset 0px 1px 2px 0px #C1000B;
+  }
+.inputBox:active  {
+   border: outset 2px #000000;
+  }
+
+// #icon{
+// background-image:url(../images/icons/dollar.png); 
+// background-repeat: no-repeat; 
+// background-position: 2px 3px;
+// }
+
+
+button {
+   border-top: 1px solid #808080;
+   background: #f2f2f2;
+   background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#f2f2f2));
+   background: -webkit-linear-gradient(top, #ffffff, #f2f2f2);
+   background: -moz-linear-gradient(top, #ffffff, #f2f2f2);
+   background: -ms-linear-gradient(top, #ffffff, #f2f2f2);
+   background: -o-linear-gradient(top, #ffffff, #f2f2f2);
+   // padding: 2.0px 2px;
+   border-radius: 5px;
+   color: #000000;
+   font-size: 1em;
+   text-decoration: none;
+   vertical-align: middle;
+   outline: none;
+   }
+button:hover {
+   border-top-color: #dedede;
+   // background: #dedede;
+   color: #c1000a;
+   }
+button:active {
+   border-top-color: #b5b5b5;
+   background: #b5b5b5;
+   }
