@@ -28,7 +28,14 @@ input {
 	border: none;
 	outline: none;
 	margin-left: 5px;
+	height: 5vh;
+    width: 50vw;
 }
+
+.fa {
+	color: $red;
+}
+
 .inputBox {
    display: flex;
    height: 5vh;
@@ -54,13 +61,6 @@ input {
 .inputBox:active  {
    border: outset 2px #000000;
   }
-
-// #icon{
-// background-image:url(../images/icons/dollar.png); 
-// background-repeat: no-repeat; 
-// background-position: 2px 3px;
-// }
-
 
 button {
    border-top: 1px solid #808080;
