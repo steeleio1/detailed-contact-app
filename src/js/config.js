@@ -9,7 +9,7 @@ function config ($stateProvider, $urlRouterProvider) {
      .state('root.home', {
       url: '/',
       templateUrl: 'templates/contacts.list.html',
-      controller: 'ContactsListController as vm'
+      controller: 'ContactsListController as vm' 
     })
 
 
@@ -18,6 +18,13 @@ function config ($stateProvider, $urlRouterProvider) {
       templateUrl: 'templates/add.tpl.html',
       controller: 'AddContactController as vm'
     })
+
+    .state('root.about', {
+      url: '/about/:id',
+      templateUrl: 'templates/about.tpl.html',
+      controller: "SingleContactController"
+    })
+    
 
   $urlRouterProvider.otherwise('/');
 }

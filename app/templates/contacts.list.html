@@ -1,9 +1,13 @@
 <div class="ContactsListBox">
   <h1>Contact List</h1>
-    <ul class="contactsList" >
-      <a href="/#/contacts/{{ contacs._id }}">
-        <li class="contactPic"></li>
-        <li ng-repeat="c in contacts" 
-            class="{{ contact.name }}"></li>
-    </ul>
+
+
+        <div ng-repeat="c in vm.contacts" class="contactsList"> 
+          <a class="nameAndPicWrapper" href="/#/contacts/{{ c._id }}">
+            <img ng-src="{{c.pic}}" alt="{{c.name}}">
+                 {{c.name}}
+          </a>
+        </div>
+
 </div>
+
